@@ -36,8 +36,7 @@ print(day_before_yesterday_close_price)
 difference = float(yesterday_stock) - float(day_before_yesterday_close_price)
 
 print(abs(difference))
-diff_percent = (difference / float(
-    yesterday_stock)) * 100  # TODO 5. - If TODO4 percentage is greater than 5 then print("Get News").
+diff_percent = (difference / float(yesterday_stock)) * 100  
 print(f'{abs(diff_percent)} %')
 up_down = None
 if difference > 0:
